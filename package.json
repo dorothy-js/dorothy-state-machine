@@ -1,0 +1,38 @@
+{
+  "name": "@pollon/state-machine",
+  "version": "1.0.0",
+  "description": "Finite State Machine implementation for the Pollon framework",
+  "main": "dist/pollon-state-machine.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pollon-js/state-machine.git"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "dev:build": "rollup -c ./build/index.js",
+    "prepublish": "npm run dev:build"
+  },
+  "keywords": [
+    "pollon",
+    "finite-state-machine",
+    "framework"
+  ],
+  "author": "Francesco Lasaracina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pollon-js/state-machine/issues"
+  },
+  "homepage": "https://github.com/pollon-js/state-machine#readme",
+  "dependencies": {
+    "@pollon/message-broker": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "core-js": "^3.6.4",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}
